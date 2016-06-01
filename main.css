@@ -1,0 +1,17 @@
+body {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+button.start {
+  /*font-size: 30px;*/
+  cursor: pointer;
+  font-family: Helvetica, Sans-serif;
+  background-color: white;
+  border: grey 2px solid;
+  color: grey;
+  letter-spacing: 0.2em;
+  margin: 0 auto;
+  padding: 1em;
+}
