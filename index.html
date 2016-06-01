@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript stuff</title>
+  <style type="text/css">
+    #timeWrapper {
+      overflow: hidden;
+      display: table;
+      height: 100px;
+      border-spacing: 10px;
+    }
+    .timebox {
+      border: grey 2px solid;
+      /*float: left;*/
+      margin: 10px;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      cursor: pointer;
+      font-family: Arial;
+      font-size: 40px;
+      padding: 0;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script src="main.js"></script>
+  <script src="closures.js"></script>
+</head>
+<body>
+  <button class="start">Display users</button>
+  <button class="reset">Reset</button>
+  <button class="reset">BAM</button>
+  <hr/>
+  <div id="content"></div>
+  <div id="time"></div>
+
+  <select id='timerSelector'>
+    <option value="0">select</option>
+    <option value="1">1 sec</option>
+    <option value="2">2 sec</option>
+    <option value="3">3 sec</option>
+    <option value="4">4 sec</option>
+  </select>
+
+<div id="timeWrapper">
+  <div class="timebox"></div>
+  <div class="timebox"></div>
+  <div class="timebox"></div>
+  <div class="timebox"></div>
+  <div class="timebox"></div>
+  <div class="timebox"></div>
+  <div class="timebox"></div>
+  <div class="timebox"></div>
+  <div class="timebox"></div>
+  <div class="timebox"></div>
+  <div class="timebox"></div>
+</div>
+
+</body>
+</html>
