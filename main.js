@@ -62,3 +62,36 @@ $(function() {
 
     ////////////////////////////////////////////////////////////////////////////////
 });
+
+  (self.counter = function() {
+      var i = 0;
+
+      counter.get = function() {
+          return i;
+      };
+
+      counter.set = function(val) {
+          i = val;
+      };
+
+      counter.increment = function() {
+          return ++i;
+      };
+  })();
+
+  // even nicer.
+  //
+
+$(function() {
+  for (var i = 0; i < 5; i++) {
+    var btn = document.createElement('button');
+    btn.appendChild(document.createTextNode('Button ' + i));
+    btn.addEventListener('click', function(x){
+      return function () {
+        console.log(x);
+      }
+    }(i));
+
+    document.body.appendChild(btn);
+  }
+});
