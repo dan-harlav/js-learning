@@ -33,3 +33,23 @@
 
   // counter.i; // undefined (`i` is not a property of the returned object)
   // i; // ReferenceError: i is not defined (it only exists inside the closure)
+
+// OR:
+
+(self.counter = function () {
+  var i = 0;
+
+  counter.get = function () {
+    return i;
+  };
+
+  counter.set = function (val) {
+    i = val;
+  };
+
+  counter.increment = function () {
+    return ++i;
+  };
+})();
+
+// even nicer.
