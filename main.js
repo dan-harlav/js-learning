@@ -9,14 +9,15 @@ var generateArrayOf = function(n) {
 $(function() {
     var list = generateArrayOf(1000);
 
+    $('button').click(function(){
+      nextListItem();
+    });
+
     var nextListItem = function() {
         var item = list.shift();
-
         if (typeof item != 'undefined') {
           $('#content').html(item);
             setTimeout( nextListItem, 0);
         }
     };
-
-    nextListItem();
 });
